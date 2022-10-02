@@ -1,7 +1,7 @@
 {
   "name": "node_auth_jwt_api",
   "version": "1.0.0",
-  "description": "API de cadastro, login e autenticação de usuário utilizando Express e JWT com servidor em mongodb",
+  "description": "API de cadastro, login e autenticação de usuário utilizando Express e JWT com banco de dados mongodb",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
