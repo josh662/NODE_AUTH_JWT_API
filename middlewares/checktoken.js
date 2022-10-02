@@ -18,10 +18,9 @@ function checktoken(req, res, next) {
 
             // Salva o id do usuário que está no token para comparar com o que foi enviado na requisição
             req.userId = decoded.id
+            next()
         })
-
-        next()
-
+        
     } catch (err) {
         console.warn(err)
         return res.status(500).json({"message": "Token inválido!"})
